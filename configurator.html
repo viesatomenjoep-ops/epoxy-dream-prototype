@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stel je tafel samen — Epoxy Dream</title>
+<meta name="description" content="Stel je eigen epoxy river table samen: maten, houtsoort, onderstel en 25 epoxykleuren, live in 3D met directe prijsberekening.">
+<link rel="stylesheet" href="assets/css/theme.css">
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+
+<div class="usp-bar">
+  <ul>
+    <li>Handgemaakt in Nederland</li>
+    <li>Elk blad uniek</li>
+    <li>Gratis bezorgd en geplaatst</li>
+    <li>10 jaar garantie op de giet</li>
+  </ul>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">EPOXY DREAM<small>werkplaats sinds 2026</small></a>
+    <nav class="nav">
+      <a href="index.html#tafels">Tafels</a>
+      <a href="configurator.html" aria-current="page">Stel samen</a>
+      <a href="index.html#proces">Zo maken we het</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn--ghost" href="index.html#tafels">Bekijk de collectie</a>
+  </div>
+</header>
+
+<main id="main" class="wrap section">
+  <p class="eyebrow">Configurator</p>
+  <h1 style="max-width:18ch">Stel je eigen tafel samen</h1>
+  <p class="lede" style="margin-top:1rem">
+    Elke tafel wordt één keer gegoten. Schuif aan de maten, kies je houtsoort en zie je epoxykleur
+    meteen veranderen. De prijs rekent live mee, en je kunt je configuratie met één link delen.
+  </p>
+
+  <div class="cfg" style="margin-top:2.6rem">
+    <div class="cfg__stage">
+      <div class="cfg__canvas" id="cfg-canvas" role="img"
+           aria-label="3D-weergave van je tafel">
+        <div class="cfg__loading" id="cfg-laden">3D wordt geladen…</div>
+      </div>
+      <div class="cfg__views">
+        <button type="button" class="chip" data-stand="hero" aria-pressed="true">Hero ¾</button>
+        <button type="button" class="chip" data-stand="boven" aria-pressed="false">Bovenaanzicht</button>
+        <button type="button" class="chip" data-stand="macro" aria-pressed="false">Macro rivier</button>
+        <button type="button" class="chip" data-stand="zij" aria-pressed="false">Zijaanzicht</button>
+        <button type="button" class="chip" data-zoom="in" aria-label="Inzoomen">+</button>
+        <button type="button" class="chip" data-zoom="uit" aria-label="Uitzoomen">−</button>
+      </div>
+      <p class="card__meta" style="margin-top:.7rem">
+        Sleep om te draaien. Het muiswiel scrollt de pagina, zoomen doe je met de knoppen.
+      </p>
+      <div class="note fallback-note" style="margin-top:1rem">
+        Zonder 3D blijft alles werken: de maten, de kleuren en de prijsberekening zijn gewoon te
+        gebruiken. In de echte webshop staat hier dan een reeks van 36 vooraf gerenderde beelden.
+      </div>
+    </div>
+
+    <div>
+      <form id="cfg-controls" onsubmit="return false"></form>
+
+      <div class="price-box">
+        <div class="price-box__row">
+          <span class="price-box__big" id="prijs-groot">—</span>
+        </div>
+        <p class="price-box__sub" id="prijs-sub"></p>
+        <details>
+          <summary>Hoe komt deze prijs tot stand?</summary>
+          <dl id="prijs-opbouw"></dl>
+          <p class="price-box__sub" style="margin-top:.7rem">
+            Opbouw volgens dezelfde kengetallen als de werkplaatscalculatie: uurtarief € 45,
+            brutomarge 35%, btw 21%.
+          </p>
+        </details>
+        <button class="btn btn--brass" id="cfg-aanvragen" style="width:100%;justify-content:center;margin-top:1.1rem">
+          Deze tafel aanvragen
+        </button>
+      </div>
+
+      <div class="note" id="cfg-bevestiging" hidden style="margin-top:1rem"></div>
+
+      <p class="card__meta" style="margin-top:1.2rem">
+        Twijfel je nog? Je kunt kleurstalen laten opsturen, videobellen met de maker, of langskomen
+        in de werkplaats.
+      </p>
+    </div>
+  </div>
+
+  <p class="sr-only" id="cfg-live" aria-live="polite"></p>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap site-footer__grid">
+    <div>
+      <span class="brand" style="color:#EDE6D8">EPOXY DREAM<small>werkplaats sinds 2026</small></span>
+      <p style="font-size:.86rem;margin-top:.9rem;max-width:32ch;color:#9A9188">
+        Massief houten tafels met een gegoten epoxy rivier. Eén stam, twee delen, één keer gieten.
+      </p>
+    </div>
+    <div><h4>Collectie</h4><ul>
+      <li><a href="index.html#tafels">Eettafels</a></li>
+      <li><a href="index.html#tafels">Salontafels</a></li>
+      <li><a href="index.html#tafels">Bartafels</a></li>
+      <li><a href="configurator.html">Op maat gegoten</a></li>
+    </ul></div>
+    <div><h4>Werkplaats</h4><ul>
+      <li><a href="index.html#proces">Zo maken we het</a></li>
+      <li><a href="index.html#proces">Onderhoud</a></li>
+      <li><a href="index.html#proces">Garantie</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li>[[AANVULLEN: adres]]</li>
+      <li>[[AANVULLEN: telefoon]]</li>
+      <li>[[AANVULLEN: e-mail]]</li>
+    </ul></div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    <span>Prototype — nog geen echte webshop. KvK en btw-nummer volgen.</span>
+    <span>© 2026 Epoxy Dream</span>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/configurator.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epoxy Dream — handgemaakte epoxy river tables</title>
+<meta name="description" content="Massief houten tafels met een gegoten epoxy rivier. Stel je eigen tafel samen in 3D, kies uit 25 epoxykleuren en zie de prijs meteen.">
+<meta property="og:title" content="Epoxy Dream — handgemaakte epoxy river tables">
+<meta property="og:description" content="Eén stam, twee delen, één keer gieten. Stel je eigen tafel samen in 3D.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/css/theme.css">
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Epoxy Dream",
+ "description":"Werkplaats voor handgemaakte epoxy river tables","areaServed":"NL"}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+
+<div class="usp-bar">
+  <ul>
+    <li>Handgemaakt in Nederland</li>
+    <li>Elk blad uniek</li>
+    <li>Gratis bezorgd en geplaatst</li>
+    <li>Bestellen zonder aanbetaling</li>
+  </ul>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">EPOXY DREAM<small>werkplaats sinds 2026</small></a>
+    <nav class="nav">
+      <a href="#tafels">Tafels</a>
+      <a href="#kleuren">Kleuren</a>
+      <a href="configurator.html">Stel samen</a>
+      <a href="#proces">Zo maken we het</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="configurator.html">Stel je tafel samen</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero__media">
+      <video autoplay muted loop playsinline preload="metadata"
+             poster="video/tafel-turquoise.webp" width="1920" height="1080">
+        <source src="video/tafel-turquoise-mobiel.mp4" media="(max-width: 749px)" type="video/mp4">
+        <source src="video/tafel-turquoise.webm" type="video/webm">
+        <source src="video/tafel-turquoise.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap hero__inner">
+      <h1>Elke tafel is één keer gegoten</h1>
+      <p>Twee delen uit dezelfde stam, in het midden verbonden door epoxy in de kleur die jij kiest.
+         Geen twee bladen zijn gelijk, en dat is precies de bedoeling.</p>
+      <div class="hero__actions">
+        <a class="btn btn--brass" href="configurator.html">Stel je eigen tafel samen</a>
+        <a class="btn btn--ghost" href="#tafels">Bekijk de tafels</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- kleuretalage -->
+  <section class="section section--band" id="kleuren">
+    <div class="wrap">
+      <div class="showcase">
+        <div class="showcase__stage">
+          <video autoplay muted loop playsinline preload="none" data-lazy="1"
+                 poster="video/tafel-zwart-goud.webp" width="1920" height="1080">
+            <source src="video/tafel-zwart-goud-mobiel.mp4" media="(max-width: 749px)" type="video/mp4">
+            <source src="video/tafel-zwart-goud.webm" type="video/webm">
+            <source src="video/tafel-zwart-goud.mp4" type="video/mp4">
+          </video>
+          <div class="showcase__tint" id="etalage-tint"></div>
+          <div class="showcase__glow" id="etalage-glow"></div>
+        </div>
+        <div>
+          <p class="eyebrow">De kleuren</p>
+          <h2>Het hout is het verhaal. De kleur is de keuze.</h2>
+          <p class="lede" style="margin-top:1rem">
+            Vijfentwintig kleuren, van glashelder tot volledig dekkend, met pareleffect, goud,
+            zilver of koper erdoor. Klik en zie de rivier veranderen.
+          </p>
+          <div class="swatches" role="radiogroup" aria-label="Epoxykleur" id="etalage-swatches"></div>
+          <p style="margin-top:1.2rem">
+            <strong id="etalage-naam"></strong><br>
+            <span class="card__meta" id="etalage-info"></span>
+          </p>
+          <p style="margin-top:1.4rem">
+            <a class="card__link" href="configurator.html">Alle kleuren in de configurator →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- tafels -->
+  <section class="section" id="tafels">
+    <div class="wrap">
+      <p class="eyebrow">De collectie</p>
+      <h2>Acht tafels uit de werkplaats</h2>
+      <p class="lede" style="margin-top:1rem;margin-bottom:2.4rem">
+        Elke tafel hieronder is in 3D opgebouwd uit zijn eigen maten. Klik door naar de
+        configurator om er jouw versie van te maken.
+      </p>
+      <div class="grid-tables" id="tafel-grid"></div>
+    </div>
+  </section>
+
+  <!-- proces -->
+  <section class="section section--band" id="proces">
+    <div class="wrap">
+      <div class="process">
+        <div class="process__video">
+          <video muted loop playsinline controls preload="none" data-lazy="1"
+                 poster="video/proces-a-tot-z.webp" width="1280" height="720">
+            <source src="video/proces-a-tot-z-mobiel.mp4" media="(max-width: 749px)" type="video/mp4">
+            <source src="video/proces-a-tot-z.webm" type="video/webm">
+            <source src="video/proces-a-tot-z.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <p class="eyebrow">Zo maken we het</p>
+          <h2>Van ruwe balk tot spiegelglans</h2>
+          <ol class="steps" style="margin-top:1.6rem">
+            <li class="step"><span class="step__n">01</span><span>
+              <span class="step__t">Het hout kiezen</span>
+              <span class="step__d">Stam uitzoeken, vocht meten — onder de 12 procent — en de spint- en kernlijnen beoordelen.</span></span></li>
+            <li class="step"><span class="step__n">02</span><span>
+              <span class="step__t">Zagen en drogen</span>
+              <span class="step__d">In balken zagen, maanden luchtdrogen, daarna de droogkamer in.</span></span></li>
+            <li class="step"><span class="step__n">03</span><span>
+              <span class="step__t">Schaven en vlakken</span>
+              <span class="step__d">Vandiktebank en handschaaf, tot beide delen kaarsrecht zijn.</span></span></li>
+            <li class="step"><span class="step__n">04</span><span>
+              <span class="step__t">Schuren en scheuren vullen</span>
+              <span class="step__d">Van korrel 80 naar 180, scheuren en knoesten vastzetten.</span></span></li>
+            <li class="step"><span class="step__n">05</span><span>
+              <span class="step__t">De mal bouwen</span>
+              <span class="step__d">Delen in de melaminemal, live edges naar binnen, kieren dicht met kit en tape.</span></span></li>
+            <li class="step"><span class="step__n">06</span><span>
+              <span class="step__t">Mengen en gieten</span>
+              <span class="step__d">Hars en verharder op de gram, pigment erdoor, in het midden uitgieten en met de spaan naar de randen uitsmeren.</span></span></li>
+            <li class="step"><span class="step__n">07</span><span>
+              <span class="step__t">Uitharden en polijsten</span>
+              <span class="step__d">Tweeënzeventig uur uitharden, dan vlakken, schuren tot korrel 3000 en polijsten tot spiegelglans.</span></span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- usps -->
+  <section class="section">
+    <div class="wrap">
+      <div class="usps">
+        <div class="usp">
+          <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/></svg>
+          <p class="usp__t">Handgemaakt in Nederland</p>
+          <p class="usp__d">Eén werkplaats, geen tussenhandel, geen container uit het buitenland.</p>
+        </div>
+        <div class="usp">
+          <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c4-6 8-6 10 0s6 6 10 0"/><path d="M2 17c4-6 8-6 10 0s6 6 10 0"/></svg>
+          <p class="usp__t">Elk blad uniek</p>
+          <p class="usp__d">De rivier volgt de natuurlijke rand van het hout. Twee keer hetzelfde bestaat niet.</p>
+        </div>
+        <div class="usp">
+          <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          <p class="usp__t">10 jaar garantie op de giet</p>
+          <p class="usp__d">Geen vergeling, geen loslaten, geen scheuren in de hars.</p>
+        </div>
+        <div class="usp">
+          <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V7h11v9M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+          <p class="usp__t">Gratis bezorgd en geplaatst</p>
+          <p class="usp__d">Wij rijden zelf. Een blad van 120 kilo laat je niet bij de deur achter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--band">
+    <div class="wrap">
+      <div class="note">
+        <strong>Dit is een prototype.</strong> De tafels in het grid zijn in de browser in 3D
+        opgebouwd, niet gefotografeerd. Afrekenen kan nog niet: in de echte webshop loopt dat via
+        Shopify met iDEAL en Mollie. De video's zijn met AI gegenereerd en dienen als plaatshouder
+        tot er echte opnames uit de werkplaats zijn.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap site-footer__grid">
+    <div>
+      <span class="brand" style="color:#EDE6D8">EPOXY DREAM<small>werkplaats sinds 2026</small></span>
+      <p style="font-size:.86rem;margin-top:.9rem;max-width:32ch;color:#9A9188">
+        Massief houten tafels met een gegoten epoxy rivier. Eén stam, twee delen, één keer gieten.
+      </p>
+    </div>
+    <div><h4>Collectie</h4><ul>
+      <li><a href="#tafels">Eettafels</a></li>
+      <li><a href="#tafels">Salontafels</a></li>
+      <li><a href="#tafels">Bartafels</a></li>
+      <li><a href="configurator.html">Op maat gegoten</a></li>
+    </ul></div>
+    <div><h4>Werkplaats</h4><ul>
+      <li><a href="#proces">Zo maken we het</a></li>
+      <li><a href="#proces">Onderhoud</a></li>
+      <li><a href="#proces">Garantie</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li>[[AANVULLEN: adres]]</li>
+      <li>[[AANVULLEN: telefoon]]</li>
+      <li>[[AANVULLEN: e-mail]]</li>
+    </ul></div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    <span>Prototype — nog geen echte webshop. KvK en btw-nummer volgen.</span>
+    <span>© 2026 Epoxy Dream</span>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/home.js"></script>
+</body>
+</html>
